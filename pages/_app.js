@@ -1,12 +1,11 @@
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <NavBar></NavBar>
+    <Layout>
       <Component {...pageProps} />
       <span>footer</span>
       <style jsx global>{``}</style>
-    </>
+    </Layout>
   );
 }
